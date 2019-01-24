@@ -1,7 +1,7 @@
 pipeline
 {
     agent any
-    {
+    
         stages
         {
             stage("Validating Project")
@@ -52,5 +52,5 @@ pipeline
                 }
             }
         }
-    }
+    
 }
