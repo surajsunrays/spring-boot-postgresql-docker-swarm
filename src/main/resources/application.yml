@@ -1,0 +1,12 @@
+spring:
+    jpa:
+        database: postgresql
+        hibernate:
+            ddl-auto: validate
+
+    datasource:
+        url: jdbc:postgresql://mysql:5432/demo
+        username: demo_user
+        password: demo_pass
+#        driver-class-name: com.mysql.jdbc.Driver
+        driver-class-name: org.postgresql.Driver
