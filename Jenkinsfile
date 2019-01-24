@@ -45,7 +45,7 @@ pipeline
             {
                 steps
                 {
-                    sh 'docker stack deploy --compose-file docker-compose app'
+                    sh 'docker stack deploy --compose-file docker-compose.yml app'
                 }
             }
         }
