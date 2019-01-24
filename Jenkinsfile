@@ -4,36 +4,36 @@ pipeline
     
         stages
         {
-            stage("Validating Project")
+            stage('Validating Project')
             {
-                step
+                steps
                 {
                     sh 'mvn clean validate'
                 }
             }
-            stage("Compiling Project")
+            stage('Compiling Project')
             {
-                step
+                steps
                 {
                     sh 'mvn compile'
                 }
             }
-            stage("Testing in Progress")
+            stage('Testing in Progress')
             {
-                step
+                steps
                 {
                     sh 'mvn test'
                 }
             }
-            stage("Packaging Project")
+            stage('Packaging Project')
             {
-                step
+                steps
                 {
                     sh 'mvn package'
                 }
             }
             //Creating Docker Image Here
-            stage("Creating Docker Image")
+            stage('Creating Docker Image')
             {
                 agent
                 {
@@ -44,9 +44,9 @@ pipeline
                     }
                 }
             }
-            stage("Deploying Docker Image to Docker Swarm")
+            stage('Deploying Docker Image to Docker Swarm')
             {
-                step
+                steps
                 {
                     sh 'docker stack deploy --compose-file docker-compose app'
                 }
