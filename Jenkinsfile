@@ -35,14 +35,11 @@ pipeline
             //Creating Docker Image Here
             stage('Creating Docker Image')
             {
-                agent
+                steps
                 {
-                    dockerfile
-                    {
-                        filename 'Dockerfile'
-                        label 'demo_mysql'
-                    }
+                    sh 'docker image build -t demo_mysql .'
                 }
+                    
             }
             stage('Deploying Docker Image to Docker Swarm')
             {
