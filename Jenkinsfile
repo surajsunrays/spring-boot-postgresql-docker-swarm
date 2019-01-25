@@ -8,28 +8,28 @@ pipeline
             {
                 steps
                 {
-                    sh 'sudo mvn clean validate'
+                    sh 'mvn clean validate'
                 }
             }
             stage('Compiling Project')
             {
                 steps
                 {
-                    sh 'sudo mvn compile'
+                    sh 'mvn compile'
                 }
             }
             stage('Testing in Progress')
             {
                 steps
                 {
-                    sh 'sudo mvn test'
+                    sh 'mvn test'
                 }
             }
             stage('Packaging Project')
             {
                 steps
                 {
-                    sh 'sudo mvn package'
+                    sh 'mvn package'
                 }
             }
             //Creating Docker Image Here
@@ -49,5 +49,4 @@ pipeline
                 }
             }
         }
-    
 }
