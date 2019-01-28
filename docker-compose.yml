@@ -6,7 +6,8 @@ services:
   postgres:
     image: postgres
     deploy:
-      condition: on-failure
+      restart_ploicy:
+        condition: on-failure
     environment:
       #MYSQL_ROOT_PASSWORD: password
       #MYSQL_DATABASE: demo
@@ -21,7 +22,8 @@ services:
   demo-postgres:
     image: sunrays86/spring-boot-docker-mysql
     deploy:
-      condition: on-failure
+      restart_policy:
+        condition: on-failure
     ports:
       - 8084:8080
     depends_on: 
