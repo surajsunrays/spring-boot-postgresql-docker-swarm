@@ -33,11 +33,12 @@ pipeline
                 }
             }
             
-            stage('Deploying Docker Image to Docker Swarm')
+            stage('Deploying Docker Image using docker-compose')
             {
                 steps
                 {
-                    sh 'docker stack deploy --compose-file docker-compose.yml app'
+                    sh 'docker-compose up -d'
+                    sh 'echo "..................Deployment Successfull.............."'
                 }
             }
         }
