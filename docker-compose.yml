@@ -25,6 +25,6 @@ services:
     depends_on: 
       - postgres
     links: 
-      - postgres:sunrays86/spring-boot-docker-mysql
+      - postgres:demo-postgres
     networks: 
       - default
