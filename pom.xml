@@ -96,7 +96,7 @@
                 </executions>
                 <configuration>
                     <repository>sunrays86/${project.ArtifactId}</repository>
-                    <tag>${project.version}</tag>
+                    <!-- <tag>${project.version}</tag> -->
                     <buildArgs>
                     <JAR_FILE>${project.build.finalName}.jar</JAR_FILE>
                     </buildArgs>

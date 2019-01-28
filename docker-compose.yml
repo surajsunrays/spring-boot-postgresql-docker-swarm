@@ -3,7 +3,7 @@ version: '3.1'
 
 services:
 
-  mysql:
+  postgres:
     image: postgres
     restart: always
     environment:
@@ -17,14 +17,14 @@ services:
     networks: 
       - default
 
-  demo-mysql:
-    image: demo_mysql
+  demo-postgres:
+    image: sunrays86/spring-boot-docker-mysql
     restart: always
     ports:
       - 8084:8080
     depends_on: 
-      - mysql
+      - postgres
     links: 
-      - mysql:demo-mysql
+      - postgres:sunrays86/spring-boot-docker-mysql
     networks: 
       - default
