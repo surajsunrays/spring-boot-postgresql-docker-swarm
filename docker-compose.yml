@@ -20,7 +20,7 @@ services:
       - default
 
   demo-postgres:
-    image: sunrays86/spring-boot-docker-mysql
+    image: sunrays86/spring-boot-docker-mysql:latest
     deploy:
       restart_policy:
         condition: on-failure
