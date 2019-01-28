@@ -6,7 +6,7 @@ services:
   postgres:
     image: postgres
     deploy:
-      restart_ploicy:
+      restart_policy:
         condition: on-failure
     environment:
       #MYSQL_ROOT_PASSWORD: password
