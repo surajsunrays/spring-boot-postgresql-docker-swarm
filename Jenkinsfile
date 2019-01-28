@@ -8,7 +8,7 @@ pipeline
             {
                 steps
                 {
-                    sh 'mvn clean validate'
+                    sh 'sudo mvn clean validate'
                 }
             }
             stage('Compiling Project')
