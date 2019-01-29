@@ -22,7 +22,7 @@ import javax.persistence.Id;
 * @date 2017年1月31日
 * @version 1.0
 */
-
+//Added some code ----- here----
 @Entity
 public class Person {
     @Id
