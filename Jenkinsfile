@@ -29,7 +29,7 @@ pipeline
             {
                 steps
                 {
-                    sh 'sudo mvn package'
+                    sh 'mvn package'
                 }
             }
             
