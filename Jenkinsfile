@@ -37,7 +37,7 @@ pipeline
             {
                 steps
                 {
-                    sh 'docker stack deploy -c docker-compose app'
+                    sh 'docker stack deploy -c docker-compose.yml app'
                     sh 'echo "..................Deployment Successfull.............."'
                 }
             }
