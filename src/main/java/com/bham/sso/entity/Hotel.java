@@ -7,7 +7,7 @@ import javax.persistence.*;
 public class Hotel implements Serializable {
 
 	private static final long serialVersionUID = 1L;
-
+	//This are testing comments
 	@Id
 //	@GeneratedValue
 	private Long id;
