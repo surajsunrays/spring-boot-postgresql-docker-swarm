@@ -60,3 +60,5 @@ public class Person {
         return this.firstName + " " + this.lastName;
     }
 }
+
+some more error lines
