@@ -12,7 +12,7 @@ package com.bham.sso.entity;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
-
+// Added some comments Here
 /**
 * <p>Title: Person.java</p>
 * <p>Description: </p>
