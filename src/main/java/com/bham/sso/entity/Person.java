@@ -23,7 +23,9 @@ import javax.persistence.Id;
 * @version 1.0
 */
 //Added some code ----- here----
-This are the error lines
+
+This are the error lines added here
+
 @Entity
 public class Person {
     @Id
