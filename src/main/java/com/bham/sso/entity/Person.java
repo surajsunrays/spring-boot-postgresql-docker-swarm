@@ -24,7 +24,7 @@ import javax.persistence.Id;
 */
 //Added some code ----- here----
 
-This are the error lines added here
+// This are the error lines added here
 
 @Entity
 public class Person {
@@ -61,4 +61,4 @@ public class Person {
     }
 }
 
-some more error lines
+// some more error lines
