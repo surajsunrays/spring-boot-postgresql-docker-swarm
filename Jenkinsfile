@@ -48,7 +48,7 @@ pipeline
             NotifyStarted();
         }
 }
-
+}
     def NotifyStarted()
 {
     // send to email
